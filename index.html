@@ -11,6 +11,60 @@
   <title>Storefront Exercise</title>
 </head>
 <body>
-  
+  <div class="container">
+    <div class="header jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">M&A's Energy Drink Emporium</h1>
+        <p class="lead">Bespoke energy drinks with a double dose of B vitamins.</p>
+      </div>
+    </div>
+    <div class="order-form">
+      <h2>Online Order Form</h2>
+      <p><em>Enter your information to order drinks online. Deliveries by bike messenger every Tuesday morning.</em></p>
+      <form>
+        <div class="form-row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="First name">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Last name">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Street Address">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="City">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="State">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="ZIP">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Flavor">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Quanity">
+          </div>
+        </div>
+        <button id="order-go" type="submit" class="btn btn-primary">Order Now!</button>
+      </form> 
+    </div>
+    <div class="receipt card border-light mb-3" style="max-width: 18rem;">
+      <div class="card-header">Thank you for your order.</div>
+      <div class="card-body">
+        <h5 class="card-title">Receipt</h5>
+        <p class="card-text"><span id="order-qty"></span> <span id="order-flavor"></span> X $3.50</p>
+        <p id="start-address" class="card-text"><span id="order-first"></span> <span id="order-last"></span></p>
+        <p id="address1" class="card-text"><span id="order-street-add"></span></p>
+        <p id="address2"><span id="order-city"></span>, <span id="order-state"></span> <span id="order-zip"></span></p>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
